@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 4s; 
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p> this is an animation square box changing colors </p>
+
+<div></div>
+
+</body>
+</html>
