@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .page__container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            border: 1px solid #000;
+        }
+
+        .container__top {
+            width: 100%;
+            background-color: rgb(8, 115, 238);
+            text-align: center;
+        }
+
+        .container__top>h1 {
+            color: #fff;
+        }
+
+        .container__bottom {
+            width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form>div {
+            margin: 0.4rem;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            margin: 1rem;
+            justify-content: space-evenly;
+        }
+
+        label,
+        input,
+        select {
+            width: 160px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page__container">
+        <div class="container" id="main-container">
+            <div class="container__top">
+                <h1>Register For Jobs</h1>
+            </div>
+            <div class="container__bottom">
+                <form onsubmit="addDetail()">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" id="fname" required />
+                    </div>
+                    <div>
+                        <label class="form__label">Last Name</label>
+                        <input type="text" id="lname" required />
+                    </div>
+                    <div>
+                        <label for="education">Education</label>
+                        <select name="education" id="education">
+                            <option value="MCA">MCA</option>
+                            <option value="BCA">BCA</option>
+                            <option value="B.Tech">B.Tech</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Passed out years</label>
+                        <input type="number" id="passed-year" required />
+                    </div>
+                    <div>
+                        <label for="yoe">Years of Experience</label>
+                        <select name="yoe" id="yoe">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Job Keywords</label>
+                        <textarea id="jobKeywords" name="jobKeywords" required>
+              </textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Add Details" id="addDetails" />
+                        <input type="reset" value="Cancel" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function addDetail() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var education = document.getElementById("education").value;
+            var passedYear = document.getElementById("passed-year").value;
+            var yoe = document.getElementById("yoe").value;
+            var jobKeywords = document.getElementById("jobKeywords").value;
+
+
+
+            var element = `<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Education</th>
+    <th>Passed Out</th>
+    <th>Years of experience</th>
+    <th>Job keywords</th>
+  </tr>
+  <tr>
+    <td>${fname} ${lname}</td>
+    <td>${education}</td>
+    <td>${passedYear}</td>
+    <td>${yoe}</td>
+    <td>${jobKeywords}</td>
+  </tr>
+  
+</table>`;
+
+            document.getElementById("main-container").innerHTML = element;
+        }
+    </script>
+</body>
+
+</html>
