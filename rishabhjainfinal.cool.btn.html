@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="all"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" media="all"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+        .ani-boxes>div {
+            background: #f2f2f2;
+            color: #fff;
+            border-radius: 4px;
+            padding: 1em;
+            margin: 0 0 1em;
+            width: 300px;
+        }
+
+        .ani-boxes:nth-child(even)>div {
+            background: #27b4a8;
+        }
+
+        .ani-boxes:nth-child(odd)>div {
+            background: #f4645f;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <p class="title is-size-4">
+                Attention Seekers</p>
+            <div class="ani-boxes">
+                <div data-ani="bounce">bounce</div>
+                <div data-ani="flash">flash</div>
+                <div data-ani="pulse">pulse</div>
+                <div data-ani="rubberBand">rubberBand</div>
+                <div data-ani="shake">shake</div>
+                <div data-ani="swing">swing</div>
+                <div data-ani="tada">tada</div>
+                <div data-ani="wobble">wobble</div>
+                <div data-ani="jello">jello</div>
+            </div>
+
+            <p class="title is-size-4">Bouncing Entrances</p>
+            <div class="ani-boxes">
+                <div data-ani="bounceIn">bounceIn</div>
+                <div data-ani="bounceInDown">bounceInDown</div>
+                <div data-ani="bounceInLeft">bounceInLeft</div>
+                <div data-ani="bounceInRight">bounceInRight</div>
+                <div data-ani="bounceInUp">bounceInUp</div>
+            </div>
+
+            <p class="title is-size-4">Bouncing Exits</p>
+            <div class="ani-boxes">
+                <div data-ani="bounceOut">bounceOut</div>
+                <div data-ani="bounceOutDown">bounceOutDown</div>
+                <div data-ani="bounceOutLeft">bounceOutLeft</div>
+                <div data-ani="bounceOutRight">bounceOutRight</div>
+                <div data-ani="bounceOutUp">bounceOutUp</div>
+            </div>
+
+            <p class="title is-size-4">Fading Entrances</p>
+            <div class="ani-boxes">
+                <div data-ani="fadeIn">fadeIn</div>
+                <div data-ani="fadeInDown">fadeInDown</div>
+                <div data-ani="fadeInDownBig">fadeInDownBig</div>
+                <div data-ani="fadeInLeft">fadeInLeft</div>
+                <div data-ani="fadeInLeftBig">fadeInLeftBig</div>
+                <div data-ani="fadeInRight">fadeInRight</div>
+                <div data-ani="fadeInRightBig">fadeInRightBig</div>
+                <div data-ani="fadeInUp">fadeInUp</div>
+                <div data-ani="fadeInUpBig">fadeInUpBig</div>
+            </div>
+
+            <p class="title is-size-4">Fading Exits</p>
+            <div class="ani-boxes">
+                <div data-ani="fadeOut">fadeOut</div>
+                <div data-ani="fadeOutDown">fadeOutDown</div>
+                <div data-ani="fadeOutDownBig">fadeOutDownBig</div>
+                <div data-ani="fadeOutLeft">fadeOutLeft</div>
+                <div data-ani="fadeOutLeftBig">fadeOutLeftBig</div>
+                <div data-ani="fadeOutRight">fadeOutRight</div>
+                <div data-ani="fadeOutRightBig">fadeOutRightBig</div>
+                <div data-ani="fadeOutUp">fadeOutUp</div>
+                <div data-ani="fadeOutUpBig">fadeOutUpBig</div>
+            </div>
+
+            <p class="title is-size-4">Flippers</p>
+            <div class="ani-boxes">
+                <div data-ani="flip">flip</div>
+                <div data-ani="flipInX">flipInX</div>
+                <div data-ani="flipInY">flipInY</div>
+                <div data-ani="flipOutX">flipOutX</div>
+                <div data-ani="flipOutY">flipOutY</div>
+            </div>
+
+            <p class="title is-size-4">Lightspeed</p>
+            <div class="ani-boxes">
+                <div data-ani="lightSpeedIn">lightSpeedIn</div>
+                <div data-ani="lightSpeedOut">lightSpeedOut</div>
+            </div>
+
+            <p class="title is-size-4">Rotating Entrances</p>
+            <div class="ani-boxes">
+                <div data-ani="rotateIn">rotateIn</div>
+                <div data-ani="rotateInDownLeft">rotateInDownLeft</div>
+                <div data-ani="rotateInDownRight">rotateInDownRight</div>
+                <div data-ani="rotateInUpLeft">rotateInUpLeft</div>
+                <div data-ani="rotateInUpRight">rotateInUpRight</div>
+            </div>
+
+            <p class="title is-size-4">Rotating Exits</p>
+            <div class="ani-boxes">
+                <div data-ani="rotateOut">rotateOut</div>
+                <div data-ani="rotateOutDownLeft">rotateOutDownLeft</div>
+                <div data-ani="rotateOutDownRight">rotateOutDownRight</div>
+                <div data-ani="rotateOutUpLeft">rotateOutUpLeft</div>
+                <div data-ani="rotateOutUpRight">rotateOutUpRight</div>
+            </div>
+
+            <p class="title is-size-4">Sliding Entrances</p>
+            <div class="ani-boxes">
+                <div class="aninmated infinite" data-ani="slideInUp">slideInUp</div>
+                <div data-ani="slideInDown">slideInDown</div>
+                <div data-ani="slideInLeft">slideInLeft</div>
+                <div data-ani="slideInRight">slideInRight</div>
+            </div>
+
+            <p class="title is-size-4">Sliding Exits</p>
+            <div class="ani-boxes">
+                <div data-ani="slideOutUp">slideOutUp</div>
+                <div data-ani="slideOutDown">slideOutDown</div>
+                <div data-ani="slideOutLeft">slideOutLeft</div>
+                <div data-ani="slideOutRight">slideOutRight</div>
+            </div>
+
+            <p class="title is-size-4">Zoom Entrances</p>
+            <div class="ani-boxes">
+                <div data-ani="zoomIn">zoomIn</div>
+                <div data-ani="zoomInDown">zoomInDown</div>
+                <div data-ani="zoomInLeft">zoomInLeft</div>
+                <div data-ani="zoomInRight">zoomInRight</div>
+                <div data-ani="zoomInUp">zoomInUp</div>
+            </div>
+
+            <p class="title is-size-4">Zoom Exits</p>
+            <div class="ani-boxes">
+                <div data-ani="zoomOut">zoomOut</div>
+                <div data-ani="zoomOutDown">zoomOutDown</div>
+                <div data-ani="zoomOutLeft">zoomOutLeft</div>
+                <div data-ani="zoomOutRight">zoomOutRight</div>
+                <div data-ani="zoomOutUp">zoomOutUp</div>
+            </div>
+
+            <div class="ani-boxes">
+                <p class="title is-size-4">Specials</p>
+                <div data-ani="hinge">hinge</div>
+                <div data-ani="jackInTheBox">jackInTheBox</div>
+                <div data-ani="rollIn">rollIn</div>
+                <div data-ani="rollOut">rollOut</div>
+            </div>
+
+        </div>
+    </section>
+    <script >
+        const notes = document.querySelectorAll('.ani-boxes > div')
+
+        for (var i = 0; i < notes.length; i++) {
+
+            notes[i].addEventListener('mouseenter', function (e) {
+                const ani = e.target.dataset.ani;
+                e.target.classList.add('animated', 'infinite', ani);
+                window.setTimeout(function () {
+                    e.target.classList.remove('animated', 'infinite', ani);
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+
+</html>
